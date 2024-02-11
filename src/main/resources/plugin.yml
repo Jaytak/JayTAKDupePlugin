@@ -1,0 +1,13 @@
+name: JayTAKDupePlugin
+version: '${project.version}'
+main: io.jaytak.jaytakdupeplugin.JayTAKDupePlugin
+api-version: '1.20'
+
+commands:
+  jdupe:
+    description: Dupes item in hand.
+    aliases:
+      - dupe
+      - jd
+    usage: /dupe /jd
+    permission: jaytakdupeplugin.dupe
