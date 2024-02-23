@@ -82,8 +82,8 @@ public class Dupe implements CommandExecutor {
                                     sender.sendMessage("[JayTAK Dupe] Final Amount Clipped To: " + finalAmt);
                                 }
                                 if (finalAmt > 64){
-                                    sender.sendMessage("JayTAK Dupe] Unsafe Final Amount: " + finalAmt + ". Capped to 64.");
-                                    getLogger().info("JayTAK Dupe] Unsafe Final Amount: " + finalAmt + ". Capped to 64.");
+                                    sender.sendMessage("[JayTAK Dupe] Unsafe Final Amount: " + finalAmt + ". Capped to 64.");
+                                    getLogger().info("[JayTAK Dupe] Unsafe Final Amount: " + finalAmt + ". Capped to 64.");
                                     finalAmt = 64;
                                 }
 
@@ -94,7 +94,7 @@ public class Dupe implements CommandExecutor {
                             }
                             else{
                                 sender.sendMessage("[JayTAK Dupe] You need to be holding an item to dupe, cant dupe nothin!");
-                                getLogger().info("[JayTAK Dupp] Player" + username + " wasnt holding item.");
+                                getLogger().info("[JayTAK Dupe] Player" + username + " wasnt holding item.");
                             }
                         }catch (Exception exception){
                             getLogger().info("[JayTak Dupe] exception: " + exception);

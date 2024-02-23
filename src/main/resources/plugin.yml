@@ -9,5 +9,5 @@ commands:
     aliases:
       - dupe
       - jd
-    usage: /dupe /jd
+    usage: /dupe  /jdupe  /jd     optional args + - / * x X [operand]
     permission: jaytakdupeplugin.dupe
