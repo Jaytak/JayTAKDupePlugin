@@ -44,3 +44,7 @@ I needed a plugin for my own server to dupe items as an admin tool, so I wrote o
 
 > [!CAUTION]
 > This is obvious, but be very careful who you give the permission node.
+
+### bStats
+
+![Plugin bStats](https://bstats.org/signatures/bukkit/JayTAK%20Dupe%20Plugin.svg)
