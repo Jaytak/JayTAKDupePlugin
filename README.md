@@ -1,11 +1,11 @@
 # JayTAK Dupe Plugin
 
 Simple plugin to dupe items.<br>
-I needed a plugin for my own server to dupe items as an admin tool, so i wrote one and decided to put it on GitHub.
+I needed a plugin for my own server to dupe items as an admin tool, so I wrote one and decided to put it on GitHub.
 
 >[!NOTE]
-> As a full time student, i am unable to provide support for this plugin. I am only sharing this to GitHub incase someone else out there finds it useful.<br>
->Feel free to submit bugs and feature requests, but there is zero guarntee i ever get around to fixing/implementing them.
+> As a full-time student, I cannot provide support for this plugin. I am only sharing this to GitHub in case someone else out there finds it useful.<br>
+>Feel free to submit bugs and feature requests, but there is no guarantee I ever get around to fixing/implementing them.
 
 #### Commands
 `/jd /dupe /jdupe`
@@ -39,7 +39,7 @@ I needed a plugin for my own server to dupe items as an admin tool, so i wrote o
 
 > [!WARNING]
 > This plugin has only been tested on Paper builds 407, 409, 422, 423, 434<br>
-> I am unable to  garuntee this  plugin will work on any other minecraft server builds.
+> I am unable to guarantee this plugin will work on any other Minecraft server builds.
 
 > [!CAUTION]
-> This is obvious, but be very careful who you give the permission node to.
+> This is obvious, but be very careful who you give the permission node.
