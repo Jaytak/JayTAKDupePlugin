@@ -7,7 +7,6 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.Material;
 import org.checkerframework.checker.nullness.qual.NonNull;
 
-
 import java.util.Arrays;
 
 import static org.bukkit.Bukkit.getLogger;
@@ -17,13 +16,15 @@ public class Dupe implements CommandExecutor {
                              @NonNull Command command,
                              @NonNull String label,
                              @SuppressWarnings("NullableProblems") String[] args){
+        String cTitle = "[JayTAK Dupe] ";
         try{
+            String pTitle = "§6§l[§r§5JayTAK Dupe§6§l]§r ";
             if (command.getName().equals("jdupe")){
                 if (sender instanceof Player){
-                    getLogger().info("[JayTAK Dupe] args: " + Arrays.toString(args));
+                    getLogger().info(cTitle + "Args: " + Arrays.toString(args));
                     Player player = (Player) sender;
                     String username = player.getName();
-                    getLogger().info("[JayTAK Dupe] " + username + " Issued the command " + command.getName());
+                    //().info(cTitle + username + " Issued the command " + command.getName());
 
                     if (player.hasPermission("jaytakdupeplugin.dupe")){
                         try{
@@ -32,6 +33,7 @@ public class Dupe implements CommandExecutor {
                                 int count = itemInHand.getAmount();
                                 int multiplier;
                                 int finalAmt = 0;
+                                getLogger().info(cTitle + "Player holding: " + itemInHand);
                                 try{
                                     if (args.length == 1){
                                         multiplier = Integer.parseInt(args[0]);
@@ -57,7 +59,7 @@ public class Dupe implements CommandExecutor {
                                                 finalAmt = count / amt;
                                                 break;
                                             default:
-                                                sender.sendMessage("[JayTak Dupe] Invalid Operator: " + operator);
+                                                sender.sendMessage( pTitle + "§4Invalid Operator: §l" + operator);
                                                 return false;
                                         }
                                                                             }
@@ -67,47 +69,49 @@ public class Dupe implements CommandExecutor {
                                     }
                                 }
                                 catch (NumberFormatException e){
-                                    sender.sendMessage("[JayTak Dupe] Invalid Multiplier Value: " + args[1]);
-                                    getLogger().info("[JayTak Dupe] Invalid Multiplier Value: " + args[1] + " args: " + Arrays.toString(args));
+                                    sender.sendMessage(pTitle + "§4Invalid Multiplier Value: §l" + args[1]);
+                                    getLogger().info(cTitle + "Invalid Multiplier Value: " + args[1] + " args: " + Arrays.toString(args));
                                 }
                                 catch (Exception e){
-                                    sender.sendMessage("[JayTAK Dupe] Ran into Exception.");
-                                    getLogger().info("[JayTAK Dupe] Ran into Exception: " + e);
+                                    sender.sendMessage(pTitle + "§4Ran into Exception.");
+                                    getLogger().info(cTitle + "Ran into Exception: " + e);
                                 }
 
                                 if (finalAmt < 1){
-                                    sender.sendMessage("[JayTAK Dupe] Hmmmm, seems sus.... Final Amount: " + finalAmt);
+                                    sender.sendMessage(pTitle + "§cHmmmm, seems sus.... Final Amount: §4§l" + finalAmt);
+                                    getLogger().info(cTitle + "Unsafe Final Amount: " + finalAmt + ". Clipped to 1.");
                                     finalAmt = 1;
-                                    sender.sendMessage("[JayTAK Dupe] Lucky for you i thought about this.");
-                                    sender.sendMessage("[JayTAK Dupe] Final Amount Clipped To: " + finalAmt);
+                                    sender.sendMessage(pTitle + "§cLucky for you i thought about this.");
+                                    sender.sendMessage(pTitle + "§cFinal Amount Clipped To: §a" + finalAmt);
+
                                 }
                                 if (finalAmt > 64){
-                                    sender.sendMessage("[JayTAK Dupe] Unsafe Final Amount: " + finalAmt + ". Capped to 64.");
-                                    getLogger().info("[JayTAK Dupe] Unsafe Final Amount: " + finalAmt + ". Capped to 64.");
+                                    sender.sendMessage(pTitle + "§4Unsafe Final Amount: §c" + finalAmt + "§4. Capped to §a64§r.");
+                                    getLogger().info(cTitle + "Unsafe Final Amount: " + finalAmt + ". Capped to 64.");
                                     finalAmt = 64;
                                 }
 
                                 itemInHand.setAmount(finalAmt);
-                                getLogger().info("[JayTAK Dupe] Duped items. Final Amount: ");
-                                sender.sendMessage("[JayTAK Dupe] Duped items. Final amount: " + finalAmt);
+                                getLogger().info(cTitle + "Duped items. Final Amount: " + finalAmt);
+                                sender.sendMessage(pTitle + "§2Duped items. Final amount: §a" + finalAmt);
                                 return true;
                             }
                             else{
-                                sender.sendMessage("[JayTAK Dupe] You need to be holding an item to dupe, cant dupe nothin!");
-                                getLogger().info("[JayTAK Dupe] Player" + username + " wasnt holding item.");
+                                sender.sendMessage(pTitle + "§4You need to be holding an item to dupe, cant dupe nothin!");
+                                getLogger().info(cTitle + "Player" + username + " was not holding an item.");
                             }
                         }catch (Exception exception){
-                            getLogger().info("[JayTak Dupe] exception: " + exception);
+                            getLogger().info(cTitle + "exception: " + exception);
                         }
                     }
                     else{
-                        sender.sendMessage("[JayTak Dupe] You dont have permission to use this command.");
+                        sender.sendMessage(pTitle + "§4You dont have permission to use this command.");
                     }
                 }
             }
         }
         catch (Exception e){
-            getLogger().info("[JayTak Dupe] Exception: " + e);
+            getLogger().info( cTitle + "Exception: " + e);
         }
     return false;
     }

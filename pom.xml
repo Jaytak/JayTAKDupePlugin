@@ -6,7 +6,7 @@
 
   <groupId>io.jaytak</groupId>
   <artifactId>JayTAKDupePlugin</artifactId>
-  <version>0.0.9</version>
+  <version>0.0.10</version>
   <packaging>jar</packaging>
 
   <name>JayTAKDupePlugin</name>
