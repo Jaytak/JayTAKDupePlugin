@@ -38,7 +38,7 @@ I needed a plugin for my own server to dupe items as an admin tool, so I wrote o
 > If the calculated stack size is below 1 it will be clipped to 1 to prevent item loss.
 
 > [!WARNING]
-> This plugin has only been tested on Paper builds 407, 409, 422, 423, 434<br>
+> This plugin has only been tested on 1.20.4 Paper builds 407, 409, 422, 423, 434<br>
 > I am unable to guarantee this plugin will work on any other Minecraft server builds.
 
 > [!CAUTION]
