@@ -1,4 +1,5 @@
 # JayTAK Dupe Plugin
+Version 0.0.10 (for paper 1.20.4)
 
 Simple plugin to dupe items.<br>
 I needed a plugin for my own server to dupe items as an admin tool, so I wrote one and decided to put it on GitHub.
