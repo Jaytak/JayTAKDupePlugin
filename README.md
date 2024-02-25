@@ -1,5 +1,7 @@
 # JayTAK Dupe Plugin
+
 <img src="https://cdn.modrinth.com/data/6GmjexmT/763a3a8415fa91d680f8d2fee47a58d0210ff097.png" width="150">
+
 Version 0.0.10 (for paper 1.20.4)
 
 Simple plugin to dupe items.<br>
@@ -45,6 +47,10 @@ I needed a plugin for my own server to dupe items as an admin tool, so I wrote o
 
 > [!CAUTION]
 > This is obvious, but be very careful who you give the permission node.
+
+
+##### Artwork
+Plugin icon made by InferiusFurious
 
 ### bStats
 
