@@ -19,7 +19,7 @@ public class Dupe implements CommandExecutor {
         String cTitle = "[JayTAK Dupe] ";
         try{
             String pTitle = "§6§l[§r§5JayTAK §cDupe§6§l]§r ";
-            if (command.getName().equals("jdupe")){
+            if (command.getName().equals("jaytakdupe")){
                 if (sender instanceof Player){
                     getLogger().info(cTitle + "Args: " + Arrays.toString(args));
                     Player player = (Player) sender;

@@ -4,9 +4,10 @@ main: io.jaytak.jaytakdupeplugin.JayTAKDupePlugin
 api-version: '1.20'
 
 commands:
-  jdupe:
+  jaytakdupe:
     description: Dupes item in hand.
     aliases:
+      - jdupe
       - dupe
       - jd
     usage: /dupe  /jdupe  /jd     optional args + - / * x X [operand]
