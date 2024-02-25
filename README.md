@@ -13,6 +13,7 @@ I needed a plugin for my own server to dupe items as an admin tool, so I wrote o
 
 #### Commands & Aliases:
 ```
+/jaytakdupe
 /jdupe
 /dupe
 /jd
