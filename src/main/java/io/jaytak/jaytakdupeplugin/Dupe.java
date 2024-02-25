@@ -18,7 +18,7 @@ public class Dupe implements CommandExecutor {
                              @SuppressWarnings("NullableProblems") String[] args){
         String cTitle = "[JayTAK Dupe] ";
         try{
-            String pTitle = "§6§l[§r§5JayTAK Dupe§6§l]§r ";
+            String pTitle = "§6§l[§r§5JayTAK §cDupe§6§l]§r ";
             if (command.getName().equals("jdupe")){
                 if (sender instanceof Player){
                     getLogger().info(cTitle + "Args: " + Arrays.toString(args));
