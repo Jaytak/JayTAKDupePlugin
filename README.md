@@ -11,8 +11,12 @@ I needed a plugin for my own server to dupe items as an admin tool, so I wrote o
 > As a full-time student, I cannot provide support for this plugin. I am only sharing this to GitHub in case someone else out there finds it useful. I will do my best to keep it up to date with the latest paper builds where possible.<br>
 >Feel free to submit bugs and feature requests, but there is no guarantee I ever get around to fixing/implementing them.
 
-#### Commands
-`/jd /dupe /jdupe`
+#### Commands & Aliases:
+```
+/jdupe
+/dupe
+/jd
+```
 
 #### Optional arguments:
 `+ - / * x X`
