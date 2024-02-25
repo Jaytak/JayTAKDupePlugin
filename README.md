@@ -1,4 +1,5 @@
 # JayTAK Dupe Plugin
+<img src="https://cdn.modrinth.com/data/6GmjexmT/763a3a8415fa91d680f8d2fee47a58d0210ff097.png" width="150">
 Version 0.0.10 (for paper 1.20.4)
 
 Simple plugin to dupe items.<br>
