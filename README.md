@@ -54,9 +54,6 @@ I needed a plugin for my own server to dupe items as an admin tool, so I wrote o
 > This is obvious, but be very careful who you give the permission node.
 
 
-##### Artwork
-Plugin icon made by InferiusFurious
-
 ### bStats
 
 ![Plugin bStats](https://bstats.org/signatures/bukkit/JayTAK%20Dupe%20Plugin.svg)
