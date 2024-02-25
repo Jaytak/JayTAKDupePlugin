@@ -5,7 +5,7 @@
 Version 1.0.0 (for paper 1.20.4)
 
 Simple plugin to dupe items.<br>
-I needed a plugin for my own server to dupe items as an admin tool, so I wrote one and decided to put it on GitHub.
+I needed a plugin for my own server to dupe items as an admin tool, so I wrote one.
 
 >[!NOTE]
 > As a full-time student, I cannot provide support for this plugin. I am only sharing this to GitHub in case someone else out there finds it useful. I will do my best to keep it up to date with the latest paper builds where possible.<br>
