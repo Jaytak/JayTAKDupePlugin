@@ -7,6 +7,8 @@ Version 1.0.1 (for paper 1.20.4)
 Simple plugin to dupe items.<br>
 I needed a plugin for my own server to dupe items as an admin tool, so I wrote one.
 
+Download from [Modrinth](https://modrinth.com/plugin/jaytak-dupe)
+
 >[!NOTE]
 > As a full-time student, I cannot provide support for this plugin. I am only sharing this to GitHub in case someone else out there finds it useful. I will do my best to keep it up to date with the latest paper builds where possible.<br>
 >Feel free to submit bugs and feature requests, but there is no guarantee I ever get around to fixing/implementing them.
